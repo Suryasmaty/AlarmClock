@@ -1,0 +1,158 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+  #title-text 
+  {
+    /*box-shadow: 0 0 5px 10px;*/
+    margin-left: 5px;
+    color: aliceblue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }
+  
+  .page-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #14b595;
+  }
+  
+  .alarm-div {
+    background-color: #ffffff;
+    padding: 3.12em 5em;
+    width: 90%;
+    max-width: 22.25em;
+    border-radius: 10px;
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Stacking items vertically */
+  }
+  
+  .timer-display {
+    font-size: 2.18em;
+    text-align: center;
+    box-shadow: 0 0 20px #E2F6CA;
+    padding: 10px 30px;
+    font-family: "Roboto Mono", monospace;
+  }
+  
+  .input-container {
+    text-align: center;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    
+  }
+  
+  .inputs {
+    gap: 2em;
+    margin-top: 2em;
+  }
+  
+  .inputs input {
+    width: 2.9em;
+    font-size: 0.8em;
+    border: 1px solid #000000;
+    border-radius: 0.1em;
+    padding: 0.4em 0.2em;
+  }
+
+  #ampmInput 
+  {
+    width:3.8em;
+    font-size: 0.8 em;
+    border: 1px solid #000000;
+    border-radius: 0.1em;
+    padding: 0.3em 0.2em;
+
+    margin-left: 10px;
+  }
+
+
+.setbutton #set
+{
+    background-color: #263159;
+  border: none;
+  padding: 1em 2.2em;
+  display: block;
+  margin: 1.5em auto 0 auto;
+  border-radius: 0.2em;
+  color: #ffffff;
+}
+
+.alarm-row {
+    font-size: 1em;
+    text-align: center;
+    margin-top: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 50;
+    
+  }
+
+
+
+  .delete-button
+  {
+    color:#BE3144;
+    padding-right: 15px;
+    padding-left: 70px;
+  }
+
+
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+/* Hide the checkbox input */
+.toggle-switch input {
+  display: none;
+}
+
+/* Style the slider (round shape) */
+.slider {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 20px;
+  bottom: 0px;
+  cursor: pointer;
+  background-color: #ccc;
+  border-radius: 20px; 
+ 
+}
+
+
+.toggle-switch input:checked + .slider {
+  background-color: #263159; /* Blue color when checked (on) */
+}
+
+/* Move the slider to the right when toggled (on) */
+.toggle-switch input:checked + .slider::before {
+  transform: translateX(19px); /* Move it to the right */
+}
+
+/* Add the circular knob for the slider */
+.slider::before {
+  content:"";
+  position: absolute;
+  width: 18px;
+  height: 15px;
+  top: 2.5px; /* Center vertically */
+  left: 2.5px; /* Center horizontally */
+  background-color: white;
+  border-radius: 50%; /* Make it circular */
+  transition: transform 0.2s;
+}

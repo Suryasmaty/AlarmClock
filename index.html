@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+<body>
+
+    <div class="page-container">
+      <div id="title-text"><h1><i class="fa-solid fa-clock"></i>ALARM CLOCK </h1></div>
+        <div class="alarm-div">
+          <!-- Content of the centered div goes here -->
+          <div class="timer-display" id="clockDisplay">00:00:00</div>
+    
+          <div class="input-container">
+             <div class="inputs">
+               <input type="number" id="hourInput" placeholder="00" min="0" max="11" />
+               <span>:</span>
+               <input type="number" id="minuteInput" placeholder="00" min="0" max="59"/>
+               <span>:</span>
+               <input type="number" id="secondsInput" placeholder="00" min="0" max="59"/>
+               <select id="ampmInput">
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+              </select>
+          </div>
+
+        </div>
+        <div class="setButton">
+            <button id="set">Set Alarm</button>
+            
+          </div>
+        </div>
+    </div>
+    
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
