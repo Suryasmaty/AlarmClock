@@ -107,5 +107,5 @@ function setAlarm() {
 // Event listener for the "Set Alarm" button
 const setAlarmButton = document.getElementById('set');
 setAlarmButton.addEventListener('click', setAlarm);
-// ... (previous code)
+
 
