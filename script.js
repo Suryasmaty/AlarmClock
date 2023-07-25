@@ -1,7 +1,8 @@
 
+
 function updateTime() {
   const now = new Date();
-  let hours = now.getHours().toString().padStart(2, '0');
+  let hours = now.getHours();
   const minutes = now.getMinutes().toString().padStart(2, '0');
   const seconds = now.getSeconds().toString().padStart(2, '0');
   let ampm = '';
@@ -19,7 +20,7 @@ function updateTime() {
     }
   }
 
-  const timeString = `${hours}:${minutes}:${seconds} ${ampm}`;
+  const timeString = `${hours.toString().padStart(2,'0')}:${minutes}:${seconds} ${ampm}`;
   clockDisplay.textContent = timeString;
 
   const alarmRows = document.querySelectorAll('.alarm-row');
@@ -32,6 +33,15 @@ function updateTime() {
 }
 
 setInterval(updateTime, 1000);
+
+
+function stopAlarmSound() {
+  const alarmSound = document.getElementById('alarmSound');
+  alarmSound.pause();
+  alarmSound.currentTime = 0;
+  alarmSound.loop = false; // Disable the loop
+  alarmActive = false;
+}
 
 
 //Function to create alarm row
