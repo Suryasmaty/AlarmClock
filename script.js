@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 
 
+=======
+//Funtion to UpdateTime
+>>>>>>> 3d4d2992a3788be2f3b0b4a6f831e4b14167e7ff
 function updateTime() {
   const now = new Date();
   let hours = now.getHours();
