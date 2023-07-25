@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-
-
-=======
 //Funtion to UpdateTime
->>>>>>> 3d4d2992a3788be2f3b0b4a6f831e4b14167e7ff
 function updateTime() {
   const now = new Date();
   let hours = now.getHours();
@@ -38,14 +33,6 @@ function updateTime() {
 
 setInterval(updateTime, 1000);
 
-
-function stopAlarmSound() {
-  const alarmSound = document.getElementById('alarmSound');
-  alarmSound.pause();
-  alarmSound.currentTime = 0;
-  alarmSound.loop = false; // Disable the loop
-  alarmActive = false;
-}
 
 
 //Function to create alarm row
